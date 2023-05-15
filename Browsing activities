@@ -1,0 +1,39 @@
+Browsing the web, especially accessing a particular URI triggers several processes. Let us dive in and have a look at what happens when you access a URI like www.google.com.
+
+When you type https://www.google.com into your browser and hit enter, a series of complex processes take place behind the scenes to display the website on your screen. In this blog post, we will walk through the steps that occur when you enter a website address into your browser, specifically looking at DNS requests, TCP/IP, firewall, HTTPS/SSL, load-balancers, web servers, application servers, and databases.
+
+    DNS Request:
+
+The first step in accessing any website is translating the human-readable URL into an IP address. Your browser sends a request to the Domain Name System (DNS) server to retrieve the IP address associated with the domain name. The DNS server returns the IP address, which your browser then uses to connect to the website.
+
+2. TCP/IP:
+
+Once the browser has the IP address, it establishes a TCP/IP connection with the web server hosting the website. This connection enables the browser to send and receive data packets to and from the server.
+
+3. Firewall:
+
+Before any data is transmitted, the request and response must pass through a firewall, which is a security system that protects the network from unauthorized access. The firewall checks the request and response packets for malware and determines whether the connection should be allowed.
+
+4. HTTPS/SSL:
+
+To ensure secure communication between the browser and the server, the browser uses the HTTPS/SSL protocol to encrypt the data transmitted between the two parties. This encryption ensures that sensitive information like passwords and credit card details are kept confidential.
+
+5. Load-balancer:
+
+If the website receives a large number of requests, the load-balancer comes into play. The load-balancer distributes the incoming traffic across multiple servers to ensure that no single server gets overloaded. This ensures that the website remains accessible to users, even during peak traffic periods.
+
+6. Web Server:
+
+The web server is responsible for handling the request from the browser and returning the requested data. The web server hosts the website files and generates the HTML code that the browser uses to render the website. The web server also handles caching, which speeds up the website’s load time by storing frequently accessed data.
+
+7. Application Server:
+
+If the website requires more advanced processing, such as executing dynamic code or interacting with a database, the web server forwards the request to an application server. The application server runs specialized software that processes the request and generates a response. The application server also provides additional security measures and handles session management.
+
+8. Database:
+
+Many websites rely on a database to store and retrieve data, such as user profiles, blog posts, and product listings. The application server sends requests to the database, which retrieves the requested data and sends it back to the application server. The application server then processes the data and sends a response back to the web server.
+
+In conclusion, accessing a website involves many steps, including DNS requests, TCP/IP connections, firewalls, HTTPS/SSL encryption, load-balancers, web servers, application servers, and databases. Each of these components plays a critical role in ensuring that the website is accessible, secure, and delivers a seamless user experience. Understanding how these components work together can help you troubleshoot issues and optimize the performance of your website.
+
+I hope that right now, you have a better understanding of how your simple action on the web triggers various processes before that webpage is served. The good news is that these processes take place in a swift manner, within nanoseconds to milliseconds.
